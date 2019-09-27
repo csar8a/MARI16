@@ -123,16 +123,54 @@ var oneone = Mario.oneone = function() {
     level.putBrick(2, 6, null);
     level.putBrick(2, 7, null);
     level.putBrick(2, 8, null);
-    level.putBrick(7, 4, null);
-    level.putBrick(7, 5, null);
-    level.putBrick(7, 6, null);
-    level.putBrick(7, 7, null);
-    level.putBrick(7, 8, null);
+    level.putBrick(6, 4, null);
+    level.putBrick(6, 5, null);
+    level.putBrick(6, 6, null);
+    level.putBrick(6, 7, null);
+    level.putBrick(6, 8, null);
     level.putBrick(3, 5, null);
     level.putBrick(4, 6, null);
-    level.putBrick(5, 6, null);
-    level.putBrick(6, 5, null);
-    level.putQBlock(21, 9, new Mario.Mushroom([336, 144]));
+    level.putBrick(5, 5, null);
+    level.putQBlock(4, 9, new Mario.Mushroom([64, 142]));
+
+
+    //A
+    level.putBrick(8, 4, null);
+    level.putBrick(9, 4, null);
+    level.putBrick(10, 4, null);
+    level.putBrick(11, 4, null);
+    level.putBrick(9, 6, null);
+    level.putBrick(10, 6, null);
+    level.putBrick(11, 6, null);
+    level.putBrick(8, 5, null);
+    level.putBrick(8, 6, null);
+    level.putBrick(8, 7, null);
+    level.putBrick(8, 8, null);
+    level.putBrick(11, 4, null);
+    level.putBrick(11, 5, null);
+    level.putBrick(11, 6, null);
+    level.putBrick(11, 7, null);
+    level.putBrick(11, 8, null);
+
+
+   //A
+   level.putBrick(13, 4, null);
+   level.putBrick(14, 4, null);
+   level.putBrick(15, 4, null);
+   level.putBrick(16, 4, null);
+   level.putBrick(9, 6, null);
+   level.putBrick(10, 6, null);
+   level.putBrick(11, 6, null);
+   level.putBrick(13, 5, null);
+   level.putBrick(13, 6, null);
+   level.putBrick(13, 7, null);
+   level.putBrick(13, 8, null);
+   level.putBrick(16, 4, null);
+   level.putBrick(16, 5, null);
+   level.putBrick(16, 6, null);
+   level.putBrick(16, 7, null);
+   
+    
 
 
   
@@ -216,7 +254,7 @@ var oneone = Mario.oneone = function() {
     level.putFlagpole(198);
   
     //and enemies
-    level.putGoomba(22, 12);
+    //level.putGoomba(22, 12);
     level.putGoomba(40, 12);
     level.putGoomba(50, 12);
     level.putGoomba(51, 12);
