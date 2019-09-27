@@ -17,6 +17,9 @@ var oneone = Mario.oneone = function() {
       rubbleSprite: function () {
         return new Mario.Sprite('sprites/items.png', [64,0], [8,8], 3, [0,1])
       },
+      coinSprite: function() {
+        return new Mario.Sprite('sprites/items.png', [0,96],[16,16], 6,[0,0,0,0,1,2,1]);
+      },
       ublockSprite: new Mario.Sprite('sprites/tiles.png', [48, 0], [16,16],0),
       superShroomSprite: new Mario.Sprite('sprites/items.png', [0,0], [16,16], 0),
       fireFlowerSprite: new Mario.Sprite('sprites/items.png', [0,32], [16,16], 20, [0,1,2,3]),
@@ -115,7 +118,7 @@ var oneone = Mario.oneone = function() {
       level.putThreeBush(bush, 12);
     });
 
-
+    
 
     //M
     level.putBrick(2, 4, null);
@@ -153,14 +156,15 @@ var oneone = Mario.oneone = function() {
     level.putBrick(11, 8, null);
 
 
-   //A
+   //R
    level.putBrick(13, 4, null);
    level.putBrick(14, 4, null);
    level.putBrick(15, 4, null);
    level.putBrick(16, 4, null);
-   level.putBrick(9, 6, null);
-   level.putBrick(10, 6, null);
-   level.putBrick(11, 6, null);
+   level.putBrick(13, 6, null);
+   level.putBrick(14, 6, null);
+   level.putBrick(15, 6, null);
+   level.putBrick(16, 6, null);
    level.putBrick(13, 5, null);
    level.putBrick(13, 6, null);
    level.putBrick(13, 7, null);
@@ -168,14 +172,59 @@ var oneone = Mario.oneone = function() {
    level.putBrick(16, 4, null);
    level.putBrick(16, 5, null);
    level.putBrick(16, 6, null);
-   level.putBrick(16, 7, null);
+   level.putBrick(15, 7, null);
+   level.putBrick(16, 8, null);
+
+
+   //I
+   level.putBrick(18, 4, null);
+   level.putBrick(18, 5, null);
+   level.putBrick(18, 6, null);
+   level.putBrick(18, 7, null);
+   level.putBrick(18, 8, null);
+
+
+
+   //F
+   level.putBrick(32, 1, null);
+   level.putBrick(32, 2, null);
+   level.putBrick(32, 3, null);
+   level.putBrick(32, 4, null);
+   level.putBrick(32, 5, null);
+   level.putBrick(33, 1, null);
+   level.putBrick(34, 1, null);
+   level.putBrick(35, 1, null);
+   level.putBrick(33, 3, null);
+   level.putBrick(34, 3, null);
+
+
+    //C
+    level.putBrick(37, 1, null);
+    level.putBrick(37, 2, null);
+    level.putBrick(37, 3, null);
+    level.putBrick(37, 4, null);
+    level.putBrick(37, 5, null);
+    level.putBrick(38, 1, null);
+    level.putBrick(39, 1, null);
+    level.putBrick(40, 1, null);
+    level.putBrick(38, 5, null);
+    level.putBrick(39, 5, null);
+    level.putBrick(40, 5, null);
+
+
+
+    coins = [
+      [32,6] ,[33,6],[34,6],[35,6],[36,6],[37,6],[38,6],[39,6],[40,6]];
+      coins.forEach(function(pos){
+      level.putCoin(pos[0],pos[1]);
+      });
    
     
 
 
   
     //interactable terrain
-    level.putQBlock(16, 9, new Mario.Bcoin([256, 144]));
+   // level.putQBlock(16, 9, new Mario.Bcoin([256, 144]));
     level.putBrick(20, 9, null);
     level.putQBlock(21, 9, new Mario.Mushroom([336, 144]));
     level.putBrick(22, 9, null);
